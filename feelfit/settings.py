@@ -20,9 +20,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'uui*nm3i(p12^9$rlhtz^0cd=$hlw^4q8zm390wn9b3is)#3u('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -92,14 +92,18 @@ TEMPLATE_DIRS = (
 
 STATIC_URL = '/static/'
 
-#Heroku settings
-import dj_database_url
-DATABASES['default'] = dj_database_url.config()
+# Heroku settings
 
-#Honor the 'X-Forwarded-Proto' header for request.is_secure()
+import dj_database_url
+
+DATABASES = {
+    'default':  dj_database_url.config(),
+}
+
+# Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-#Allow all host headers
+# Allow all host headers
 ALLOWED_HOSTS = ['*']
 
 STATIC_ROOT = 'staticfiles'
