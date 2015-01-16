@@ -2,12 +2,14 @@
 	margin: 0;
 	padding: 0;
 	position: relative;	
-}
 
+}
 body{
+
 	text-align: center;
-	background-image: url('imagens/plano_de_fundo.jpg');
+	background-image: url("plano_de_fundo.jpg");
 	color: #FAFAFA;
+
 }
 
 input{
@@ -16,33 +18,23 @@ input{
 
 .geral{
 	margin: 0 auto;
-	width: 100%;
+	width: 1000px;
 	height: 100%;
 	position: relative;	
 }
+.barra{
+	background-color: orange;
+	width: 900px;
+	height: 70px;
 
+}
 
 .menu{
-	width: 100%;
-	height: 50px;
-	background-color: black;
-	margin-top: 100px;
-	opacity: 0.7;
-	position: relative;
-
+	background-color: yellow;
+	width: 900px;
+	height: 70px;
 }
-.botao{
-	margin: -58px; 
-}
-.botao ul {
-	padding:0px;
-	margin:0px;
-	list-style:none;
-}
-.botao ul li { 
-	display: inline;
-	 }
-.button{*/
+.button{
 	/*/-webkit-border-radius: 12px;
 	border-radius: 12px;
 	width: 100px;
@@ -55,11 +47,11 @@ input{
 	background: -ms-linear-gradient(top,  #cdeb8e 12%,#a5c956 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  #cdeb8e 12%,#a5c956 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 ); /* IE6-9 */
-	font-size: 20px;
+	font-size: 15px;
 	font-family: "Verdana";
 	color: white;
 	padding: 10px;
-	color: black;
+	color: white;
 	width: 140px;
 	height: 40px;
 	padding-bottom: 30px;
@@ -68,32 +60,38 @@ input{
 
 }
 .logo{
-	width: 900px; 
-	height:300px;
-	background-color: black;
-	opacity: 0.5;
-	margin-top: 150px;
-	-webkit-border-radius: 15px 150px;
-border-radius: 15px 150px;
-}
-.fonte h1{
-	font-family: broadway;
-	margin-top: -250px;
-	font-size: 150px;
-}
-.fonte h2{
-	font-family: verdana;
-	font-size: 20px;
-}
-.rodape{
-	background-color: black;
-	width: 100%;
-	height: 50px;
-	margin-top: 150px;
-	opacity: 0.7;
-}
-.rodape h1{
-	font-size: 20px;
-	margin-top:30px; 
+	
+	width: 900px;
+	height: 150px;
+	background-color: orange;
+	background-position: center;
 
+}
+.logo h1{
+	font-family: "verdana" ;
+	font-size: 60px;
+	color: black;
+	text-align: center;
+	/*height: 60px;*/
+	padding-top: 30px;
+}
+
+
+.conteudo {
+	width: 900px;
+	height: 900px;
+	background-color: white;
+}
+.conteudo h1{
+	font-family: verdana;
+	font-size: 25px;
+	color: black;
+}
+#img1 {
+	height:250px; 
+	width:250px;
+}
+#img2{
+	height:250px; 
+	width:250px;
 }
