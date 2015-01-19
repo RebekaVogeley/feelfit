@@ -9,7 +9,7 @@ DEBUG = False
 
 TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = ['guarded-eyrie-5488.herokuapp.com']
+ALLOWED_HOSTS = ['feelfit.herokuapp.com']
 
 
 INSTALLED_APPS = (
