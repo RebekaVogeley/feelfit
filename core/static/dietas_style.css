@@ -1,40 +1,102 @@
+.conteudo{
+
+  background-color: #cdeb8e;
+  width: 1000px;
+  height: 3000px;
+  margin-top: 100px;
+  font-family: verdana;
+
+}
+
+.topo{
+  margin-top: 100px;
+  height: 100px;
+  background-color: black;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  position: relative;
+
+
+
+}
+.topo h1{
+  margin-top: 30px;
+  position: absolute;
+  margin-left:320px;
+  font-family: Cooper Black;
+}
+
+.imagem1{
+  background-color: black;
+  width: 900px;
+  height: 300px;
+  margin-top: 100px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  opacity: 0.5;
+}
+
+.imagem2{
+
+  background-color: black;
+  width: 900px;
+  height: 300px;
+  margin-top: 100px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  opacity: 0.5;
+  
+}
+
+
 *{
   margin: 0;
   padding: 0;
   position: relative; 
-
 }
-body{
 
+body{
   text-align: center;
   background-image: url("imagens/plano_de_fundo.jpg");
   color: #FAFAFA;
-
-}
-
-input{
-  text-decoration: none;
 }
 
 .geral{
   margin: 0 auto;
-  width: 1000px;
+  width: 100%;
   height: 100%;
   position: relative; 
 }
-.barra{
-  background-color: orange;
-  width: 900px;
-  height: 70px;
 
+.iars img{
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  position: absolute;
+  margin-right: -500px;
+  margin-left: -500px;
 }
-
 .menu{
-  background-color: yellow;
-  width: 900px;
-  height: 70px;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  margin-top: 60px;
+  opacity: 0.7;
+  position: relative;
+
 }
-.button{
+.botao{
+  margin: -58px; 
+}
+.botao ul {
+  padding:0px;
+  margin:0px;
+  list-style:none;
+}
+.botao ul li { 
+  display: inline;
+   }
+.button{*/
   /*/-webkit-border-radius: 12px;
   border-radius: 12px;
   width: 100px;
@@ -47,11 +109,11 @@ input{
   background: -ms-linear-gradient(top,  #cdeb8e 12%,#a5c956 100%); /* IE10+ */
   background: linear-gradient(to bottom,  #cdeb8e 12%,#a5c956 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 ); /* IE6-9 */
-  font-size: 15px;
+  font-size: 20px;
   font-family: "Verdana";
   color: white;
   padding: 10px;
-  color: white;
+  color: black;
   width: 140px;
   height: 40px;
   padding-bottom: 30px;
@@ -60,25 +122,27 @@ input{
 
 }
 .logo{
-  
-  width: 900px;
-  height: 150px;
-  background-color: orange;
-  background-position: center;
-
+  width: 400px; 
+  height:150px;
+  background-color: black;
+  opacity: 0.5;
+  margin-top: 50px;
+  -webkit-border-radius: 15px 150px;
+border-radius: 15px 150px;
 }
-.logo h1{
-  font-family: "verdana" ;
-  font-size: 60px;
-  color: black;
-  text-align: center;
-  /*height: 60px;*/
-  padding-top: 30px;
+.fonte h1{
+  font-family: broadway;
+  margin-top: -120px;
+  font-size: 80px;
 }
-
-
-.conteudo {
-  width: 900px;
-  height: 900px;
-  background-color: white;
+.fonte h2{
+  font-family: verdana;
+  font-size: 13px;
+}
+.rodape{
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  margin-top: 150px;
+  opacity: 0.7;
 }

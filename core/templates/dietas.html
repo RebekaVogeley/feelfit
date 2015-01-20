@@ -1,45 +1,142 @@
 {% load static %}
-
 <html>
-  <head>
-    <title> Feel Fit </title>
+    <head>
+        <title> Feel Fit</title>
     <link rel="stylesheet" type="text/css" href="{% static 'dietas_style.css' %}"> 
     <link href="{% static 'logomaior.png' %}" rel='shortcut icon'/> 
+<link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="{% static 'bootstrap-theme.min.css' %}">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
     <meta charset="utf-8">
-    <script type="text/javascript"> </script>
     
-
-    <body><center> 
-    <div class= "geral">
-      
-      <div class="barra"></div>
-      <div class= "menu">
-             <a href="index.html"><button class="button">Início</button></a>
-             <a href="exercicios.html"><button class="button">Exercícos</button></a>
-             <a href="dietas.html"><button class="button">Dietas</button></a>
-             <a href="sobrenos.html"><button class="button">Sobre nós</button></a>
-             <button class="button">--</button>
-
+<body><center>
+    <div class="logo">
         </div>
 
-    	<div class= "logo">
-    		<h1>Dietas</h1>
-    	</div>
-    	
-        <div class= "conteudo">
-         <!--  <img scr="musc.jpg"> -->
-        Os alimentos para ganhar massa muscular são alimentos ricos em proteínas como carne ou leguminosas, por exemplo, pois as proteínas ajudam na formação do tecido muscular, contribuindo para o ganho da massa muscular, principalmente para quem anda na academia ou pratica exercício físico regularmente.
+    <div class="fonte">
+                    <h1>Feel Fit</h1>
+                    <h2> Tecnologia para uma vida saudável.</h2>
+            </div>
 
-Além destes alimentos, é importante ingerir alimentos ricos em carboidratos, pois eles fazem com que o indivíduo gaste a energia destes alimentos e não a dos próprios músculos.
-        <!-- <a href="https://docs.google.com/a/cin.ufpe.br/document/d/18_mjWH2p-UvpnhzJ6CKXwu-P0rQz70RhzJ6B8eU53NI/edit">  riscos </a> -->
+    <div class= "menu">
+                <div class= "iars">
+                <img src="{% static 'imagens/iarsites.jpg' %}"/>
+                </div>
+            </div>
+            <div class="botao">
+                <ul>
+                    <li><a href="index.html"><button class="button">Início</button></a></li>
+                    <li><a href="exercicios.html"><button class="button">Exercícos</button></a></li>
+                    <li><a href="dietas.html"><button class="button">Dietas</button></a></li>
+                    <li><a href="sobrenos.html"><button class="button">Sobre nós</button></a></li>
+                    <li><a href="dicas.html"><button class="button">Dicas</button></a></li>
+                </ul>
+            </div>
+            <div class= "conteudo">
 
-    		<!-- <img src="http://s3.amazonaws.com/codecademy-blog/assets/f3a16fb6.jpg" /> -->
-    		<!-- se colocar a imagem dentro do a, o link fica na imagem -->
+                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <h1> Dieta detox</h1>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        <h3>
+                    A dieta detox tem duração de sete dias. O principal objetivo é remover as toxinas do organismo e outras substâncias prejudiciais à saúde, além de secar todas as gordurinhas. Além disso a dieta detox ajuda a ficar mais disposta.</h3>
 
-    	</div>
+                    <img src="{% static 'imagens/detox.jpg' %}">
+                    
 
-	</div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <h1>Dieta sem glúten</h1>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        <h3> A dieta sem glúten ajuda a secar alguns quilinhos, porém é preciso acompanhamento de um nutricionista para realizá-la, já que o glúten é uma substância muito importante para nosso organismo. A ingestão de glúten pelo corpo é muito difícil, o que leva ao acúmulo de toxinas e deixa o corpo inchado </h3>
 
-    </center></body>
-	</head>
+        <img src="{% static 'imagens/gluten.jpg' %}">
+                
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <h1>Dieta antienvelhecimento</h1>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+       <h3> Com a dieta do antivelhecimento é possível perder 7 kg em até 30 dias. Além disso, a pessoa ganha muito mais disposição, melhora a saúde e protege contra os efeitos de idade. Um máximo, não é mesmo? A dieta baseia-se em alimentos antioxidantes naturais, além de carboidratos e proteínas com bastante moderação. </h3>
+
+       <img src="{% static 'imagens/envelhecimento.jpg' %}">
+                
+      </div>
+    </div>
+  </div>
+
+  
+</div>
+                <!--<div class="topo"> <h1>Qual treino você deseja ? </h1></div>
+                <div class="imagem1"><h1> Ganhar massa muscular</h1>
+                    <h3>
+                    Ganhe massa muscular e fique com o corpo desejado seguindo nossas dicas e exercícios.</h3>
+                    <a href="ganhar_massa.html"><button class="button">Clique aqui</button></a> 
+
+                </div>
+
+                <div class="imagem2"> <h1>Perder peso</h1>
+                <h3> Emagrecer, como bem sabem os que vivem de dieta, não é tão difícil quanto não voltar a engordar. Mas será que é possível mesmo emagrecer para sempre? É, sim, garante uma das maiores pesquisas sobre o assunto, apresentada no encontro da Associação Americana de Nutrição, Atividade Física e Metabolismo, em Colorado Springs, nos Estados Unidos. </h3>
+                <a href="perder_peso.html"><button class="button">Clique aqui</button></a>
+
+                 </div>
+
+                <div class="imagem3"> <h1>Manter peso</h1>
+                <h3> Deixar o corpo em forma, firme e tonificado não é tarefa fácil, mas alguns alimentos podem ajudar. Eles podem não apenas auxiliar na queima de gordura, como no aumento de massa magra. Mas para isso dar certo, além de consumir entre 2200 e 1750 calorias por dia, dependendo do seu objetivo, é preciso se exercitar. </h3>
+                <a href="manter.html"><button class="button">Clique aqui</button></a>
+
+                 </div>
+                 -->
+            </div>
+</center>
+    <div class="rodape">
+        <h1> Copyright © 2015 </h1>
+    </div>
+    </body>
+
+    </head>
+
+
+</html>
+
+
+
+
+
+
+
+
+    </head>
+
+
 </html>
