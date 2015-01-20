@@ -6,3 +6,6 @@ def home(request):
 
 def exercicios(request):
 	return render(request,'exercicios.html')
+
+def dietas(request):
+	return render(request,'dietas.html')
