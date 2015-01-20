@@ -9,7 +9,7 @@ DEBUG = False
 
 TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = ['feelfit.herokuapp.com']
+ALLOWED_HOSTS = ['damp-garden-7151.herokuapp.com']
 
 
 INSTALLED_APPS = (
