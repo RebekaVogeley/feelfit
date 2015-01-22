@@ -1,0 +1,122 @@
+.conteudo{
+
+	background-color: #cdeb8e;
+	width: 1000px;
+	height: 3000px;
+	margin-top: 100px;
+	font-family: verdana;
+
+}
+
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	position: relative;	
+}
+
+body{
+	text-align: center;
+	background-image: url("plano3.jpg");
+	color: #FAFAFA;
+}
+
+.geral{
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	position: relative;	
+}
+
+.iars img{
+	width: 50px;
+	height: 50px;
+	margin-top: 5px;
+	position: absolute;
+	margin-right: -500px;
+	margin-left: -500px;
+}
+.menu{
+	width: 100%;
+	height: 50px;
+	background-color: black;
+	margin-top: 60px;
+	opacity: 0.7;
+	position: relative;
+
+}
+.botao{
+	margin: -58px; 
+}
+.botao ul {
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+.botao ul li { 
+	display: inline;
+	 }
+.button{*/
+	/*/-webkit-border-radius: 12px;
+	border-radius: 12px;
+	width: 100px;
+	height: 50px;*/
+	background: #cdeb8e; /* Old browsers */
+	background: -moz-linear-gradient(top,  #cdeb8e 12%, #a5c956 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(12%,#cdeb8e), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #cdeb8e 12%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #cdeb8e 12%,#a5c956 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #cdeb8e 12%,#a5c956 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #cdeb8e 12%,#a5c956 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 ); /* IE6-9 */
+	font-size: 20px;
+	font-family: "Verdana";
+	color: white;
+	padding: 10px;
+	color: black;
+	width: 140px;
+	height: 40px;
+	padding-bottom: 30px;
+	border: none;
+	margin-top: 13px;
+
+}
+.logo{
+	width: 400px; 
+	height:150px;
+	background-color: black;
+	opacity: 0.5;
+	margin-top: 50px;
+	-webkit-border-radius: 15px 150px;
+border-radius: 15px 150px;
+}
+.fonte h1{
+	font-family: broadway;
+	margin-top: -120px;
+	font-size: 80px;
+}
+.fonte h2{
+	font-family: verdana;
+	font-size: 13px;
+}
+.rodape{
+	background-color: black;
+	width: 100%;
+	height: 50px;
+	margin-top: 150px;
+	opacity: 0.7;
+}
+
+.imagem1{
+	background-color: black;
+	width: 900px;
+	height: 320px;
+	margin-top: 100px;
+	margin-left:50px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	opacity: 0.5;
+	position: absolute;
+}

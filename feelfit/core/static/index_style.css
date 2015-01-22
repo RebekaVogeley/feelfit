@@ -1,0 +1,135 @@
+*{
+	margin: 0;
+	padding: 0;
+	position: relative;	
+}
+
+body{
+	text-align: center;
+	background-image: url("imagens/plano_de_fundo.jpg");
+	color: #FAFAFA;
+}
+
+.geral{
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	position: relative;	
+}
+
+.iars img{
+	width: 50px;
+	height: 50px;
+	margin-top: 5px;
+	position: absolute;
+	margin-right: -500px;
+	margin-left: -500px;
+}
+.imgface img{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	margin-top: -50px;
+	margin-left: 450px;
+}
+.imginsta img{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	margin-top: -50px;
+	margin-left: 497px;
+}
+
+.menu{
+	width: 100%;
+	height: 50px;
+	background-color: black;
+	margin-top: 100px;
+	opacity: 0.8;
+	position: relative;
+
+}
+.botao{
+	margin: -58px; 
+}
+.botao ul {
+	padding:0px;
+	margin:0px;
+	list-style:none;
+}
+.botao ul li { 
+	display: inline;
+	 }
+.button{*/
+	/*/-webkit-border-radius: 12px;
+	border-radius: 12px;
+	width: 100px;
+	height: 50px;*/
+	background: #cdeb8e; /* Old browsers */
+	background: -moz-linear-gradient(top,  #cdeb8e 12%, #a5c956 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(12%,#cdeb8e), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #cdeb8e 12%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #cdeb8e 12%,#a5c956 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #cdeb8e 12%,#a5c956 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #cdeb8e 12%,#a5c956 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 ); /* IE6-9 */
+	font-size: 20px;
+	font-family: "broadway";
+	padding: 10px;
+	color: black;
+	width: 140px;
+	height: 40px;
+	padding-bottom: 30px;
+	border: none;
+	margin-top: 13px;
+
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+
+}
+.botao:hover{
+	color: yellow;
+}
+.logo{
+	width: 900px; 
+	height:300px;
+	background-color: black;
+	opacity: 0.6;
+	margin-top: 150px;
+	-webkit-border-radius: 15px 150px;
+		border-radius: 15px 150px;
+
+}
+.imglogo{
+	background-image: url("imagens/plano_de_fundo.png");
+	width: 178px;
+	height: 150px;
+	position: absolute;
+	margin-top: -250px;
+	margin-left: 290px;
+}
+.fonte h1{
+	font-family: broadway;
+	margin-top: -250px;
+	font-size: 120px;
+	margin-left: 130px;
+
+}
+.fonte h2{
+	font-family: verdana;
+	font-size: 20px;
+	margin-left: 130px
+
+}
+.rodape{
+	background-color: black;
+	width: 100%;
+	height: 50px;
+	margin-top: 150px;
+	opacity: 0.7;
+}
+.rodape h1{
+	font-size: 15px;
+	margin-top: 123px;
+}
+

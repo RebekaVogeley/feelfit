@@ -1,0 +1,49 @@
+{% load static %}
+<html>
+  <head>
+    <title> Feel Fit </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'index_style.css' %}"> 
+    <link href="{% static 'LOGO.png' %}" rel='shortcut icon'/> 
+    <meta charset="utf-8">
+    <script type="text/javascript" src="{% static 'js/aula07.js' %}">> </script>
+
+    <body><center>
+        <div class="geral">
+        
+            <div class= "menu">
+                <div class= "iars">
+                <img src="{% static 'imagens/iarsites.jpg' %}"/>
+                </div>
+            </div>
+            <div class="imgface">
+                <img src="{% static 'imagens/face.jpg' %}">
+            </div>
+            <div class="imginsta">
+                <img src="{% static 'imagens/insta.jpg' %}">
+            </div>
+            <div class="botao">
+                <ul>
+                    <li><a href="{% url 'home' %}"><button class="button">Início</button></a></li>
+                    <li><a href="{% url 'exercicios' %}"><button class="button">Exercícios</button></a></li>
+                    <li><a href="{% url 'dietas' %}"><button class="button">Dietas</button></a></li>
+                    <li><a href="{% url 'sobrenos' %}"><button class="button">Sobre nós</button></a></li>
+                    <li><a href="{% url 'dicas' %}"><button class="button">Dicas</button></a></li>
+                </ul>
+            </div>
+            <div class= "logo"></div>
+            <div class= "imglogo"></div>
+            <div class="fonte">
+                    <h1>Feel Fit</h1>
+                    <h2> Tecnologia para uma vida saudável.</h2>
+            </div>
+
+            <div class= "rodape">
+                <h6 style="color:white; text-align:center; font-size:20px; vertical-align:middle"> Copyright © 2015</h6>
+                <span style="color:white; font-size:13px; text-align: center; vertical-align:middle">As informações e sugestões contidas neste site têm caráter meramente informativo. Elas não substituem o aconselhamento e o acompanhamento de médicos, nutricionistas, psicólogos, profissionais de educação física e outros especialistas.</span>
+            </div>
+
+        </div>
+
+   </center> </body>
+  <head>
+<html>
