@@ -61,11 +61,11 @@ return (Math.round(x*Math.pow(10,places)))/Math.pow(10,places)
             </div>
             <div class="botao">
                 <ul>
-                    <li><a href="index.html"><button class="button">Início</button></a></li>
-                    <li><a href="exercicios.html"><button class="button">Exercícos</button></a></li>
-                    <li><a href="dietas.html"><button class="button">Dietas</button></a></li>
-                    <li><a href="sobrenos.html"><button class="button">Sobre nós</button></a></li>
-                    <li><a href="dicas.html"><button class="button">Dicas</button></a></li>
+                   <li><a href="{% url 'home' %}"><button class="button">Início</button></a></li>
+                   <li><a href="{% url 'exercicios' %}"><button class="button">Exercícios</button></a></li>
+                   <li><a href="{% url 'dietas' %}"><button class="button">Dietas</button></a></li>
+                   <li><a href="{% url 'sobrenos' %}"><button class="button">Sobre nós</button></a></li>
+                   <li><a href="{% url 'dicas' %}"><button class="button">Dicas</button></a></li>
                 </ul>
             </div>
             <div class= "conteudo">

@@ -1,13 +1,17 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
+from core.views import login_view, logout_view
 
 
-urlpatterns = patterns('',
-    url(r'^$', 'feelfit.core.views.home', name='home'),
-    url(r'^exercicios/$', 'feelfit.core.views.exercicios', name='exercicios'),
-    url(r'^dietas/$', 'feelfit.core.views.dietas', name='dietas'),
-    url(r'^ganhar_massa/$', 'feelfit.core.views.ganhar_massa', name='ganhar_massa'),
-    url(r'^sobrenos/$', 'feelfit.core.views.sobrenos', name='sobrenos'),
-    url(r'^dicas/$', 'feelfit.core.views.dicas', name='dicas'),
+urlpatterns = patterns('feelfit.core.views',
+    url(r'^$', 'home', name='home'),
+    url(r'^exercicios/$', 'exercicios', name='exercicios'),
+    url(r'^dietas/$', 'dietas', name='dietas'),
+    url(r'^exercicio/ganhar_massa/$', 'ganhar_massa', name='ganhar_massa'),
+    url(r'^sobrenos/$', 'sobrenos', name='sobrenos'),
+    url(r'^dicas/$', 'dicas', name='dicas'),
+    url(r'^login/$', login_view , name='login'),
+    url(r'^logout/$', logout_view , name='logout'),
+    url(r'^cadastrar/$','cadastrar', name='cadastrar'),
     url(r'^admin/', include(admin.site.urls)),
 )

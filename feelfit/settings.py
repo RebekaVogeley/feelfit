@@ -52,6 +52,8 @@ TIME_ZONE = 'America/Recife'
 
 USE_I18N = True
 
+AUTH_USER_MODEL = 'core.User'
+
 USE_L10N = True
 
 USE_TZ = True
@@ -79,3 +81,4 @@ if not os.environ.get('PRODUCTION'):
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
+

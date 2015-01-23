@@ -37,12 +37,20 @@
                     <h2> Tecnologia para uma vida saudável.</h2>
             </div>
 
+            {% if  not user.is_authenticated %}
+                <a href="{% url 'login' %}"><button class="button">Entrar</button></a>
+
+            {% else %}
+                <a href="{% url 'logout' %}"><button class="button">Sair</button></a>
+            {% endif %}
+
             <div class= "rodape">
                 <h6 style="color:white; text-align:center; font-size:20px; vertical-align:middle"> Copyright © 2015</h6>
                 <span style="color:white; font-size:13px; text-align: center; vertical-align:middle">As informações e sugestões contidas neste site têm caráter meramente informativo. Elas não substituem o aconselhamento e o acompanhamento de médicos, nutricionistas, psicólogos, profissionais de educação física e outros especialistas.</span>
             </div>
 
         </div>
+
 
    </center> </body>
   <head>
