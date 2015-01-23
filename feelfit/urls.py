@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
-from core.views import login_view, logout_view
+from feelfit.core.views import login_view, logout_view
 
 
 urlpatterns = patterns('feelfit.core.views',
