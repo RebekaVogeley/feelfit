@@ -27,7 +27,7 @@ def login_view(request):
 				return redirect('error_page')
 		else:
 			messages.warning(request, 'Login inválido ou vazio')
-			return redirect('login_view')
+			return redirect('home')
 
 	return render(request, template_name)
 
