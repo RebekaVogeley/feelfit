@@ -27,15 +27,16 @@
                     <li><a href="{% url 'home' %}"><button class="button">Início</button></a></li>
                     <li><a href="{% url 'exercicios' %}"><button class="button">Exercícios</button></a></li>
                     <li><a href="{% url 'dietas' %}"><button class="button">Dietas</button></a></li>
-                    <li><a href="{% url 'sobrenos' %}"><button class="button">Sobre nós</button></a></li>
                     <li><a href="{% url 'dicas' %}"><button class="button">Dicas</button></a></li>
+                    <li><a href="{% url 'calculoimc' %}"><button class="button2">Calcule seu IMC</button></a></li>
+                    <li><a href="{% url 'sobrenos' %}"><button class="button">Sobre nós</button></a></li>
                 </ul>
             </div> 
             <div class= "logo"></div>
             <div class= "imglogo"></div>
             <div class="fonte">
                     <h1>Feel Fit</h1>
-                    <h2> Tecnologia para uma vida saudável.</h2>
+                    <h2> Tecnologia para uma vida saudável</h2>
             </div>
 
             {% if  not user.is_authenticated %}

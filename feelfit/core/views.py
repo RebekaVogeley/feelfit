@@ -9,6 +9,7 @@ def home(request):
     return render(request, 'index.html')
 
 def login_view(request):
+	
 	template_name = 'login.html'
 
 	if request.method == 'POST':
@@ -61,10 +62,7 @@ def cadastrar(request):
 		
 		if form.is_valid():
 			user = form.save()
-			user = authenticate(
-				username=user.username, password=form.cleaned_data['password1']
-			)
-			login(request, user)
+			return redirect('home')
 		else:
 			form = RegisterForm(request.POST)
 	else:
@@ -75,3 +73,5 @@ def cadastrar(request):
 
 	return render(request, template_name, context)
 
+def calculoimc(request):
+	return render(request,'calculoimc.html')	

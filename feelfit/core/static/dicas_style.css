@@ -8,9 +8,6 @@
 
 }
 
-
-
-
 *{
 	margin: 0;
 	padding: 0;
@@ -33,10 +30,9 @@ body{
 .iars img{
 	width: 50px;
 	height: 50px;
-	margin-top: 5px;
+	margin-top: -1px;
 	position: absolute;
-	margin-right: -500px;
-	margin-left: -500px;
+	margin-left: -550px; /*verificar a posição a img iars, se vier mais para cima dos botões, aumentar para -600px*/
 }
 .menu{
 	width: 100%;
@@ -72,8 +68,7 @@ body{
 	background: linear-gradient(to bottom,  #cdeb8e 12%,#a5c956 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 ); /* IE6-9 */
 	font-size: 20px;
-	font-family: "Verdana";
-	color: white;
+	font-family: "broadway";
 	padding: 10px;
 	color: black;
 	width: 140px;
@@ -83,6 +78,35 @@ body{
 	margin-top: 13px;
 
 }
+
+.button2{*/
+	/*/-webkit-border-radius: 12px;
+	border-radius: 12px;
+	width: 100px;
+	height: 50px;*/
+	background: #cdeb8e; /* Old browsers */
+	background: -moz-linear-gradient(top,  #cdeb8e 12%, #a5c956 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(12%,#cdeb8e), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #cdeb8e 12%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #cdeb8e 12%,#a5c956 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #cdeb8e 12%,#a5c956 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #cdeb8e 12%,#a5c956 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 ); /* IE6-9 */
+	font-size: 20px;
+	font-family: "broadway";
+	padding: 10px;
+	color: black;
+	width: 200px;
+	height: 40px;
+	padding-bottom: 30px;
+	border: none;
+	margin-top: 13px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+
+}
+
+
 .logo{
 	width: 400px; 
 	height:150px;
@@ -121,17 +145,27 @@ background: #F2F2F2;
 font-size: 16px;
 width:320px;
 }
-.button{
+/*.button{
 background:none repeat scroll 0 0 #00A1E0;
 color:#FFF;
 height:35px;
 width:33%;
 padding-bottom:5px
+}*/
+.areatexto{
+	border:2px;
+	solid #ccc;
+	border-radius:0px;
+	font-family:inherit;
+	margin-right:0%;
+	margin-bottom:7px;
+	padding: 4px 10px;
 }
-.areatexto
-{border:2px
-solid #ccc;border-radius:0px;font-family:inherit;margin-right:0%;margin-bottom:7px;padding:4px
-10px}
-.titulo
-{font-size:11px;line-height:2.181818182;font-weight:bold;text-transform:uppercase;color:#636363}
+.titulo{
+	font-size:11px;
+	line-height:2.181818182;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#636363
+}
 

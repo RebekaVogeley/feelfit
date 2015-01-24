@@ -4,17 +4,26 @@
         <title> Feel Fit</title>
     <link rel="stylesheet" type="text/css" href="{% static 'sobrenos_style.css' %}"> 
     <link href="{% static 'logomaior.png' %}" rel='shortcut icon'/> 
-    <meta charset="utf-8">
+    <link rel="shortcut icon" href="{% static 'imagens/logo.ico' %}">
     <script type="text/javascript"> </script>
-    </head>
-    
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="{% static 'bootstrap-theme.min.css' %}">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <meta charset="utf-8">
+
 <body><center>
     <div class="logo">
         </div>
 
     <div class="fonte">
                     <h1>Feel Fit</h1>
-                    <h2> Tecnologia para uma vida saudável.</h2>
+                    <h2> Tecnologia para uma vida saudável</h2>
             </div>
 
     <div class= "menu">
@@ -25,16 +34,49 @@
             <div class="botao">
                 <ul>
                     <li><a href="{% url 'home' %}"><button class="button">Início</button></a></li>
-                    <li><a href="{% url 'exercicios' %}"><button class="button">Exercícios</button></a></li>
-                    <li><a href="{% url 'dietas' %}"><button class="button">Dietas</button></a></li>
-                    <li><a href="{% url 'sobrenos' %}"><button class="button">Sobre nós</button></a></li>
-                    <li><a href="{% url 'dicas' %}"><button class="button">Dicas</button></a></li>
+                   <li><a href="{% url 'exercicios' %}"><button class="button">Exercícios</button></a></li>
+                   <li><a href="{% url 'dietas' %}"><button class="button">Dietas</button></a></li>
+                   <li><a href="{% url 'dicas' %}"><button class="button">Dicas</button></a></li>
+                   <li><a href="{% url 'calculoimc' %}"><button class="button2">Calcule seu IMC</button></a></li>
+                   <li><a href="{% url 'sobrenos' %}"><button class="button">Sobre nós</button></a></li>
                 </ul>
             </div>
 
             <div class= "conteudo">
-                 <div class="imagem1"><h1> IARsites</h1> </div>
-            </div>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <h1>Quem somos?</h1>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
+            <h3>
+            O projeto Feel Fit foi desenvolvido pela equipe IARSites que é composta por Ananda Almeida, Isadora Oliveira, Rayane Martins, Rebeka Vogeley, Rita Brito para disciplina de Engenharia de Software do curso de Sistemas de Informação da Universidade Federal de Pernambuco no período 2014.2.
+            </h3>
+        </div>
+    </div>
+  </div>
+    <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <h1>Qual nosso objetivo?</h1>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
+            <h3>
+            Ser um site voltado a área nutricional e de atividades físicas que ajuda a suprir a necessidade da população atual em administrar seus hábitos alimentares em busca de uma vida mais saudável.
+            </h3>
+        </div>
+    </div>
+  </div>
+</div>
 
 
 </center>
@@ -44,16 +86,5 @@
             </div>
 
 </body>
-
-
-
-
-
-
-
-
-
-    
-
-
+</head>
 </html>

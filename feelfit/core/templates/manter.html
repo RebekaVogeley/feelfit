@@ -2,7 +2,8 @@
 	<head>
 		<title> Feel Fit</title>
 	<link rel="stylesheet" type="text/css" href="manter.css"> 
-	<link href="{% static 'logomaior.png' %}" rel='shortcut icon'/> 
+	<link href="{% static 'logomaior.png' %}" rel='shortcut icon'/>
+  <link rel="shortcut icon" href="{% static 'imagens/logo.ico' %}"> 
 <link rel="stylesheet" href="css/bootstrap.min.css">
 
 <!-- Optional theme -->
@@ -20,7 +21,7 @@
 
 	<div class="fonte">
     				<h1>Feel Fit</h1>
-    				<h2> Tecnologia para uma vida saudável.</h2>
+    				<h2> Tecnologia para uma vida saudável</h2>
     		</div>
 
 	<div class= "menu">
@@ -30,16 +31,17 @@
     		</div>
     		<div class="botao">
     			<ul>
-            		<li><a href="index.html"><button class="button">Início</button></a></li>
-            		<li><a href="exercicios.html"><button class="button">Exercícos</button></a></li>
-            		<li><a href="dietas.html"><button class="button">Dietas</button></a></li>
-            		<li><a href="sobrenos.html"><button class="button">Sobre nós</button></a></li>
-            		<li><a href="dicas.html"><button class="button">Dicas</button></a></li>
+            		<li><a href="{% url 'home' %}"><button class="button">Início</button></a></li>
+                   <li><a href="{% url 'exercicios' %}"><button class="button">Exercícios</button></a></li>
+                   <li><a href="{% url 'dietas' %}"><button class="button">Dietas</button></a></li>
+                   <li><a href="{% url 'dicas' %}"><button class="button">Dicas</button></a></li>
+                   <li><a href="{% url 'calculoimc' %}"><button class="button2">Calcule seu IMC</button></a></li>
+                   <li><a href="{% url 'sobrenos' %}"><button class="button">Sobre nós</button></a></li>
 				</ul>
     		</div>
     		<div class= "conteudo">
-
-    		     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+<a href="{% url 'exercicios' %}"><button class="button">Voltar</button></a>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingOne">
       <h4 class="panel-title">
@@ -53,7 +55,7 @@
         <h3>
     				Coma quatro a cinco vezes por semana, ao almoço, carne magra (peru, coelho e frango). Ingira peixe azul três vezes por semana. Quanto à fruta, coma duas a três peças por dia, enquanto os legumes devem ser ingeridos uma a duas vezes por dia. Aposte nas leguminosas uma a duas vezes por semana, são ricas em fibra.</h3>
 
-            <img src="equilibrio.jpg">
+            <img src="(% static 'imagens/equilibrio.jpg' %}">
     				
 
       </div>
@@ -71,7 +73,7 @@
       <div class="panel-body">
         <h3> A fruta ou um sumo de fruta natural é uma excelente escolha a meio da manhã ou da tarde. Não petisque snacks ou bolachas. </h3>
 
-        <img src="frutas.jpg">
+        <img src="{% static 'imagens/frutas.jpg' %}">
     			
       </div>
     </div>
@@ -88,7 +90,7 @@
       <div class="panel-body">
        <h3> É importante que beba entre 1,5 L ou 2 L de líquidos, se possível de água. Embora o consumo de vinho tinto seja aconselhado, beba apenas um copo durante as refeições até quatro vezes por semana.</h3>
 
-       <img src="agua.jpg">
+       <img src="{% static 'imagens/agua.jpg' %}">
     			
       </div>
     </div>
@@ -119,7 +121,8 @@
     		</div>
 </center>
 	<div class="rodape">
-		<h1> Copyright © 2015 </h1>
+      <h6 style="color:white; text-align:center; font-size:20px; vertical-align:middle"> Copyright © 2015</h6>
+      <span style="color:white; font-size:12px; text-align: center; vertical-align:middle">As informações e sugestões contidas neste site têm caráter meramente informativo. Elas não substituem o aconselhamento e o acompanhamento de médicos, nutricionistas, psicólogos, profissionais de educação física e outros especialistas.</span>
 	</div>
 	</body>
 

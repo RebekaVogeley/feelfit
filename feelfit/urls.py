@@ -13,5 +13,6 @@ urlpatterns = patterns('feelfit.core.views',
     url(r'^login/$', login_view , name='login'),
     url(r'^logout/$', logout_view , name='logout'),
     url(r'^cadastrar/$','cadastrar', name='cadastrar'),
+    url(r'^calculoimc/$','calculoimc', name='calculoimc'),
     url(r'^admin/', include(admin.site.urls)),
 )
