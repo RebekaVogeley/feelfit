@@ -21,7 +21,7 @@
 
 body{
 	text-align: center;
-	background-image: url("plano3.jpg");
+	background-image: url("imagens/plano_de_fundo.jpg");
 	color: #FAFAFA;
 }
 
@@ -35,7 +35,7 @@ body{
 .iars img{
 	width: 50px;
 	height: 50px;
-	margin-top: 5px;
+	margin-top: -1px;
 	position: absolute;
 	margin-left: -550px;
 }
@@ -85,8 +85,7 @@ body{
 	background: linear-gradient(to bottom,  #cdeb8e 12%,#a5c956 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 ); /* IE6-9 */
 	font-size: 20px;
-	font-family: "Verdana";
-	color: white;
+	font-family: "broadway";
 	padding: 10px;
 	color: black;
 	width: 140px;
@@ -94,6 +93,8 @@ body{
 	padding-bottom: 30px;
 	border: none;
 	margin-top: 13px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
 
 }
 

@@ -18,7 +18,7 @@
 
 	<div class= "menu">
     			<div class= "iars">
-    			<img src="iarsites.jpg"/>
+    			<img src="{% static 'imagens/iarsites.jpg' %}"/>
     			</div>
     		</div>
     		<div class="botao">
@@ -34,7 +34,7 @@
 
     		<div class= "conteudo">
     			 
-                 <a href="exercicios.html"><button class="button">Voltar</button></a>
+                 <a href="{% url 'exercicios' %}"><button class="button">Voltar</button></a>
 
                 <div class="imagem1">
                 <h2 style="color: white">Plano de treino para aumentar massa muscular e ficar definida<h2>
@@ -62,7 +62,7 @@
                 
                   </div>
 
-                  <div class="treino_img"><img src="treino.jpg"></div>
+                  <div class="treino_img"><img src="{% static 'imagens/treino.jpg' %}"></div>
     		</div>
 
 

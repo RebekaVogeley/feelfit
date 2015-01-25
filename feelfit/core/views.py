@@ -52,6 +52,12 @@ def sobrenos(request):
 def dicas(request):
 	return render(request,'dicas.html')	
 
+def calculoimc(request):
+	return render(request,'calculoimc.html')	
+
+def perder_peso(request):
+	return render(request,'perder_peso.html')	
+
 	
 def cadastrar(request):
 	template_name = 'cadastrar.html'
@@ -72,6 +78,3 @@ def cadastrar(request):
 	}
 
 	return render(request, template_name, context)
-
-def calculoimc(request):
-	return render(request,'calculoimc.html')	

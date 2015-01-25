@@ -1,17 +1,18 @@
+{% load static %}
 <html>
 	<head>
 		<title> Feel Fit</title>
-	<link rel="stylesheet" type="text/css" href="perder_peso.css"> 
+	<link rel="stylesheet" type="text/css" href="{% static 'perder_peso.css' %}"> 
     <link href="{% static 'logomaior.png' %}" rel='shortcut icon'/> 
     <link rel="shortcut icon" href="{% static 'imagens/logo.ico' %}">
     <script type="text/javascript"> </script>
 	
     <!-- Optional theme -->
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'bootstrap-theme.min.css' %}">
 
 <!-- Latest compiled and minified JavaScript -->
     <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
     <meta charset="utf-8">
 
@@ -26,7 +27,7 @@
 
 	<div class= "menu">
     			<div class= "iars">
-    			<img src="iarsites.jpg"/>
+    			<img src="'{% static 'imagens/iarsites.jpg' %}"/>
     			</div>
     		</div>
     		<div class="botao">
