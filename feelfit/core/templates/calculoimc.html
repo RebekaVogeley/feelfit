@@ -4,7 +4,7 @@
     <head>
         <title> Feel Fit </title>
         <link rel="stylesheet" type="text/css" href="{% static 'calculoimc.css' %}">
-        <link rel="shortcut icon" href="logo.ico"> 
+        <link rel="shortcut icon" href="{% static 'imagens/logo.ico' %}">
         <link href="{% static 'LOGO.png' %}" rel='shortcut icon'/> 
         <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
 
@@ -80,8 +80,8 @@
                 <div>
                     <form name="form" id="form" class="imc">
                         <p class="titulo"></p>
-                        <p style="color:white">Digite seu peso: <input type="Text" name="peso" size="4" class="areatexto" /> Kg </p>
-                        <p style="color:white">Digite sua altura <input type="Text" name="alt" class="areatexto" size="4" /> Cm </p>
+                        <p>Digite seu peso: <input type="Text" name="peso" size="4" class="areatexto" /> Kg </p>
+                        <p>Digite sua altura <input type="Text" name="alt" class="areatexto" size="4" /> Cm </p>
 
                         <br>
           
