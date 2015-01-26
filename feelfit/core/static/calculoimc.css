@@ -2,7 +2,7 @@
 
 	background-color: #cdeb8e;
 	width: 1000px;
-	height: 3000px;
+	height: 1500px;
 	margin-top: 100px;
 	font-family: verdana;
 
@@ -12,17 +12,28 @@
 	margin-top: 100px;
 	height: 100px;
 	background-color: black;
-	-webkit-border-radius:10px;
+	-webkit-border-radius: 10px;
 	border-radius: 10px;
 	position: relative;
-}
 
+
+
+}
 .topo h1{
 	margin-top: 30px;
 	position: absolute;
-	margin-left: 320px;
-	font-family: cooper black;
+	margin-left:320px;
+	font-family: Cooper Black;
 }
+.imagem1{
+	background-color: black;
+	width: 900px;
+	height: 500px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	opacity: 0.5;
+}
+
 
 *{
 	margin: 0;
@@ -119,6 +130,7 @@ body{
 	padding-bottom: 30px;
 	border: none;
 	margin-top: 13px;
+
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
 
@@ -137,13 +149,14 @@ border-radius: 15px 150px;
 	font-family: broadway;
 	margin-top: -120px;
 	font-size: 80px;
-	color: white;
+	color:white;
+
 }
 .fonte h2{
 	font-family: verdana;
 	font-size: 13px;
+	color:white;
 	margin-top: -10px;
-	color: white;
 }
 .rodape{
 	background-color: black;

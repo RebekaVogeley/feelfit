@@ -1,0 +1,100 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Feel Fit </title>
+        <link rel="stylesheet" type="text/css" href="{% static 'calculoimc.css' %}">
+        <link rel="shortcut icon" href="logo.ico"> 
+        <link href="{% static 'LOGO.png' %}" rel='shortcut icon'/> 
+        <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="{% static 'bootstrap-theme.min.css' %}">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <meta charset="utf-8">
+    </head>
+    <body><center>
+        <script type="text/javascript">
+            function calcularIMC() {
+                var peso = eval(document.form.peso.value)
+                var alt = eval(document.form.alt.value)
+                var alt2 = alt / 100
+                var IMC = peso / (alt2 * alt2)
+                document.form.massacor.value = custRound(IMC, 1);
+                if (document.form.massacor.value < 18.5)
+                    document.form.comment.value = "Peso Baixo";
+                if (document.form.massacor.value >= 18.5 && document.form.massacor.value <= 24.9)
+                    document.form.comment.value = "Peso Ideal";
+                if (document.form.massacor.value >= 25 && document.form.massacor.value <= 29.9)
+                    document.form.comment.value = "Acima do Peso";
+                if (document.form.massacor.value >= 30 && document.form.massacor.value <= 34.9)
+                    document.form.comment.value = "Obesidade Tipo I";
+                if (document.form.massacor.value >= 35 && document.form.massacor.value <= 39.9)
+                    document.form.comment.value = "Obesidade Tipo II";
+                if (document.form.massacor.value >= 40 && document.form.massacor.value <= 49.9)
+                    document.form.comment.value = "Obesidade Mórbida";
+                if (document.form.massacor.value > 50)
+                    document.form.comment.value = "Obesidade Extrema";
+            }
+
+            function custRound(x, places) {
+                return (Math.round(x * Math.pow(10, places))) / Math.pow(10, places)
+            }
+        </script>
+
+        <div class="logo">
+        </div>
+
+        <div class="fonte">
+            <h1>Feel Fit</h1>
+            <h2>Tecnologia para uma vida saudável</h2>
+        </div>
+
+        <div class= "menu">
+            <div class= "iars">
+                <img src="{% static 'imagens/iarsites.png' %}"/>
+            </div>
+        </div>
+        <div class="botao">
+            <ul>
+                <li><a href="{% url 'home' %}"><button class="button">Início</button></a></li>
+                <li><a href="{% url 'exercicios' %}"><button class="button">Exercícios</button></a></li>
+                <li><a href="{% url 'dietas' %}"><button class="button">Dietas</button></a></li>
+                <li><a href="{% url 'dicas' %}"><button class="button">Dicas</button></a></li>
+                <li><a href="{% url 'calculoimc' %}"><button class="button2">Calcule seu IMC</button></a></li>
+                <li><a href="{% url 'sobrenos' %}"><button class="button">Sobre nós</button></a></li>
+            </ul>
+        </div>
+        <div class= "conteudo">
+            <!--<a href="index.html"><button class="button">Voltar</button></a>-->
+            <br>
+            <div class="imagem1">
+                <h1 style="color:white">Calcule seu IMC</h1>
+                <div class="calculoimc"></div> 
+                <h3></h3>
+                <br>
+                <div>
+                    <form name="form" id="form" class="imc">
+                        <p class="titulo"></p>
+                        <p style="color:white">Digite seu peso: <input type="Text" name="peso" size="4" class="areatexto" /> Kg </p>
+                        <p style="color:white">Digite sua altura <input type="Text" name="alt" class="areatexto" size="4" /> Cm </p>
+
+                        <br>
+          
+                        <input type="button" style="font-size: 8pt; color: black" value="Calcular IMC" onclick="calcularIMC()" name="button" class="button" /><a href="http://emagrecerpravaler.com"> </a>
+                        <input type="reset" style="font-size: 8pt; color: black" value="Limpar Valores" class="button" /><br /><br />
+                        <p style="color:white">O seu IMC é <input type="Text" name="massacor" id="massacor" class="areatexto" size="4" />
+                        <br/>
+                    
+                        SITUAÇÃO:
+                        <input type="Text" name="comment" id="comment" class="areatexto" size="25"  /></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </center></body>
+</html>

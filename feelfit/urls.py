@@ -15,5 +15,6 @@ urlpatterns = patterns('feelfit.core.views',
     url(r'^cadastrar/$','cadastrar', name='cadastrar'),
     url(r'^calculoimc/$','calculoimc', name='calculoimc'),
     url(r'^perder_peso/$','perder_peso', name='perder_peso'),
+    url(r'^exercicios/manter/$','manter', name='manter'),
     url(r'^admin/', include(admin.site.urls)),
 )

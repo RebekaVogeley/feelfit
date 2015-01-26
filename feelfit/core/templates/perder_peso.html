@@ -27,12 +27,12 @@
 
 	<div class= "menu">
     			<div class= "iars">
-    			<img src="'{% static 'imagens/iarsites.jpg' %}"/>
+    			<img src="{% static 'imagens/iarsites.png' %}"/>
     			</div>
     		</div>
     		<div class="botao">
     			<ul>
-            		<li><a href="{% url 'home' %}"><button class="button">Início</button></a></li>
+            	   <li><a href="{% url 'home' %}"><button class="button">Início</button></a></li>
                    <li><a href="{% url 'exercicios' %}"><button class="button">Exercícios</button></a></li>
                    <li><a href="{% url 'dietas' %}"><button class="button">Dietas</button></a></li>
                    <li><a href="{% url 'dicas' %}"><button class="button">Dicas</button></a></li>
@@ -42,29 +42,55 @@
     		</div>
 
     		<div class= "conteudo">
-<a href="{% url 'exercicios' %}"><button class="button">Voltar</button></a>
-<div class="imagem1"> 
-    <embed margin-top="10" width="420" height="315" src="http://www.youtube.com/embed/oz_VrReOlPU"> </div>
-    		</div>
 
+                 <a href="{% url 'exercicios' %}"><button class="button">Voltar</button></a>
+                 
+            <div class="imagem2">
+                <center><h1>Exercícios que ajudam a perder peso</h1></center>
+                <div class="redondo">
+                    <img src="{% static 'imagens/muay_thai.jpg' %}" id="redondo">
+                    <h2><u>Muay Thai</u></h2>
+                    <h4>Dos exercícios para perder peso, o Muay Thai é realmente um dos melhores. Essa arte marcial tailandesa, além de queimar até 1.000 calorias em apenas 1 hora de treino, é muito divertida e dinâmica. </h4>
+
+                    <img src="{% static 'imagens/sppin.jpg' %}" id="redondo">
+                    <h2><u>Spinning</u></h2>
+                    <h4> Esse exercício para perder peso é feito com uma bicicleta ergométrica, e durante o treino a pessoa muda de posição na bicicleta, aumenta a velocidade e o peso da carga. Essa característica do spinning promove uma grande queima de gordura, fortalece os músculos e define o corpo.</h4>
+
+                    <img src="{% static 'imagens/jump.jpg' %}" id="redondo">
+                    <h2><u>Jump</u></h2>
+                    <h4>Esse exercício, além de emagrecer, é ótimo para trabalhar o equilíbrio, a coordenação motora e fortalecer os músculos. O jump também ajuda no combate à celulite. </h4>
+
+                    <img src="{% static 'imagens/pular.jpg' %}" id="redondo">
+                    <h2><u>Pular corda</u></h2>
+                    <h4>Esse é um exercício que pode ajudar você perder até 4 kg em apenas 15 dias. Pular corda também ajuda a fortalecer o coração e os pulmões, e ajuda o organismo a eliminar as toxinas nocivas.</h4>
+
+                    <img src="{% static 'imagens/caminhada.jpg' %}" id="redondo">
+                    <h2><u>Caminhada</u></h2>
+                    <h4> Muita gente pensa que a caminhada não ajuda na perda de peso, no entanto, ela é um exercício aeróbico muito poderoso que pode ajudar sim no processo de emagrecimento saudável.</h4>
+                    </div>
+
+
+                </div>
+            
+
+                 <div class="imagem1"> 
+                    <h1> Aprenda como emagrecer na sua própria casa com este vídeo:</h1>
+                    <br>
+                    <embed id="video" src="http://www.youtube.com/embed/oz_VrReOlPU"> 
+                    </div>
+            </div>
+            
 
 </center>
-	<div class="rodape">
-		<h6 style="color:white; text-align:center; font-size:20px; vertical-align:middle"> Copyright © 2015</h6>
-        <span style="color:white; font-size:12px; text-align: center; vertical-align:middle">As informações e sugestões contidas neste site têm caráter meramente informativo. Elas não substituem o aconselhamento e o acompanhamento de médicos, nutricionistas, psicólogos, profissionais de educação física e outros especialistas.</span>
-	</div>
+    <div class= "rodape">
+                <h6 style="color:white; text-align:center; font-size:20px; vertical-align:middle"> Copyright © 2015</h6>
+                <span style="color:white; font-size:12px; text-align: center; vertical-align:middle">As informações e sugestões contidas neste site têm caráter meramente informativo. Elas não substituem o aconselhamento e o acompanhamento de médicos, nutricionistas, psicólogos, profissionais de educação física e outros especialistas.</span>
+            </div>
 
 </body>
 
 
-
-
-
-
-
-
-
-	</head>
+    </head>
 
 
 </html>

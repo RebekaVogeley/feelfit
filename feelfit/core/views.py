@@ -58,6 +58,9 @@ def calculoimc(request):
 def perder_peso(request):
 	return render(request,'perder_peso.html')	
 
+def manter(request):
+	return render(request,'manter.html')	
+
 	
 def cadastrar(request):
 	template_name = 'cadastrar.html'
