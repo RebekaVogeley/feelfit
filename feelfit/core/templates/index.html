@@ -24,12 +24,19 @@
             </div>
             <div class="botao">
                 <ul>
+                    
+                {% if  not user.is_authenticated %}
                     <li><a href="{% url 'home' %}"><button class="button">Início</button></a></li>
                     <li><a href="{% url 'exercicios' %}"><button class="button">Exercícios</button></a></li>
                     <li><a href="{% url 'dietas' %}"><button class="button">Dietas</button></a></li>
                     <li><a href="{% url 'dicas' %}"><button class="button">Dicas</button></a></li>
                     <li><a href="{% url 'calculoimc' %}"><button class="button2">Calcule seu IMC</button></a></li>
                     <li><a href="{% url 'sobrenos' %}"><button class="button">Sobre nós</button></a></li>
+                {% else %}    
+                    <a href="{% url 'login' %}"><button class="button">Entrar</button></a>  
+                {% endif %}
+
+
                 </ul>
             </div> 
             <div class= "logo"></div>
